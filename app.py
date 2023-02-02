@@ -4,26 +4,26 @@ import pickle
 import streamlit as st
 import requests
 from PIL import Image
-from streamlit_option_menu import option_menu
+# from streamlit_option_menu import option_menu
 
 
-# Find more emojis here: https://www.webfx.com/tools/emoji-cheat-sheet/
-st.set_page_config(page_title="My Webpage", page_icon=":tada:", layout="wide")
+# # Find more emojis here: https://www.webfx.com/tools/emoji-cheat-sheet/
+# st.set_page_config(page_title="My Webpage", page_icon=":tada:", layout="wide")
 
 
 
-# side bar menu
-with st.sidebar:
-    selected = option_menu(
-        menu_title=None,
-        options=["home"],
-        icons= ["hosue", "book", "envelop"],
-        menu_icon= "cast",
-        default_index=0,
-        orientation="horizontal" )
+# # side bar menu
+# with st.sidebar:
+#     selected = option_menu(
+#         menu_title=None,
+#         options=["home"],
+#         icons= ["hosue", "book", "envelop"],
+#         menu_icon= "cast",
+#         default_index=0,
+#         orientation="horizontal" )
 
-if selected == "home":
-    st.title(f'Hi, I am Shagufta :wave:')
+# if selected == "home":
+#     st.title(f'Hi, I am Shagufta :wave:')
 
 
 # loading the saved model
@@ -48,7 +48,7 @@ def diabetes_prediction(input_data):
   
 def main():
     # giving a title
-    st.title('check diabetise:')
+    st.title('Welcome to my website check diabetise:')
     # getting the input data from the user
     Pregnancies = st.text_input('Number of Pregnancies')
     Glucose = st.text_input('What is your Glucose Level')
