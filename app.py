@@ -27,7 +27,7 @@ from PIL import Image
 
 
 # loading the saved model
-loaded_model = pickle.load(open('/Users/hesham/Desktop/nlp_project_folder/eda_sidha/trained_model.sav', 'rb'))
+loaded_model = pickle.load(open('https://github.com/ShaguftaArfin/ml_model_deplyoment/blob/main/trained_model.sav', 'rb'))
 
 
 # creating a function for Prediction
