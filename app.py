@@ -26,7 +26,7 @@ def diabetes_prediction(input_data):
   
 def main():
     # giving a title
-    st.title('Welcome to my website')
+    st.title('Diabetes Prediction System')
     # getting the input data from the user
     Pregnancies = st.text_input('Number of Pregnancies')
     Glucose = st.text_input('What is your Glucose Level')
